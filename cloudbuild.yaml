@@ -3,7 +3,7 @@ steps:
   - name: 'python:3.11'
     entrypoint: 'bash'
     env:
-      - 'DJANGO_SETTINGS_MODULE=your_project.settings'  # <-- change this
+      - 'DJANGO_SETTINGS_MODULE=app.settings'  # <-- change this
       - 'GS_BUCKET_NAME=django-static-mahesh-app123'            # used in collectstatic
       - 'DJANGO_SECRET_KEY=dummy'
       - 'DJANGO_DEBUG=False'
